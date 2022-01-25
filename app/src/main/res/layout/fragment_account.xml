@@ -1,15 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:orientation="vertical"
     tools:context=".fragment.AccountFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Account Fragment" />
+        android:layout_height="360dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/role"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login/Create Account quickly to manage orders"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:text="LOGIN"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/btnLogin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By clicking, I accept the Terms &amp; Conditions &amp; Privacy Policy"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="15dp"/>
 
-</FrameLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_baseline_local_offer_24"
+           android:layout_marginStart="10dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Offers"
+           android:layout_marginStart="10dp"
+           android:textColor="@color/black"
+           android:textStyle="bold"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_mail_24"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Feedback"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>
